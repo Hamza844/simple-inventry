@@ -81,7 +81,7 @@ You can find the code and Docker setup here:
 GitHub Repo: hamza844/simple-inventry
 
 
-# Next Steps 🚀
+** Next Steps 🚀**
 Thanks for reviewing my work up to this point!
 In the next phase, I will deploy this application on Kubernetes using pods.
 For updates and professional networking, connect with me on LinkedIn:
