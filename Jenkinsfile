@@ -1,20 +1,17 @@
 pipeline {
-    agent { label 'mynode' }
+    agent { label 'mynodes' }
 
     stages {
-        stage('Hello World') {
-            steps {
-                echo 'Hello World from Jenkins on AWS Agent!'
-            }
-        }
-
-        stage('Install Dependencies') {
+        stage('Install declarative tool') {
             steps {
                 sh '''
-                    chmod +x install.sh
+                    sudo chmod +x install.sh
                     ./install.sh
                 '''
             }
+        }
+        stage("Compile") {
+            echo "compile is successfull"
         }
     }
 }
