@@ -7,5 +7,10 @@ pipeline {
                 echo 'Hello World from Jenkins on AWS Agent!'
             }
         }
+        stage("install dependency") {
+            sh '''
+                
+            '''
+        }
     }
 }
