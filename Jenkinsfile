@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'mynode' } 
+    agent { label 'mynode' }
 
     stages {
         stage('Hello World') {
@@ -7,10 +7,14 @@ pipeline {
                 echo 'Hello World from Jenkins on AWS Agent!'
             }
         }
-        stage("install dependency") {
-            sh '''
-                
-            '''
+
+        stage('Install Dependencies') {
+            steps {
+                sh '''
+                    chmod +x install.sh
+                    ./install.sh
+                '''
+            }
         }
     }
 }
