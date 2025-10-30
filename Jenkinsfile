@@ -10,8 +10,10 @@ pipeline {
                 '''
             }
         }
-        stage("Compile") {
-            echo "compile is successfull"
+        stage('Compile') {
+            steps {
+                echo 'Compile is successful'
+            }
         }
     }
 }
