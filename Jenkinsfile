@@ -26,16 +26,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            echo "Pipeline finished."
-        }
-        failure {
-            echo "❌ Build failed — check logs for details!"
-        }
-        success {
-            echo "✅ All good — build and scan completed successfully!"
-        }
-    }
 }
